@@ -40,13 +40,13 @@ void loop() {
   if (led_cycle > 99) {
     led_cycle = 0;
     for (int sensorNumber = FIRST_SENSOR; sensorNumber <= LAST_SENSOR; sensorNumber++) {
+      Serial.print("pin");
       Serial.print(sensorNumber);
       Serial.print(":");
       Serial.print(sensorValues[sensorNumber]);
-      Serial.print("   ");
+      Serial.print("  ");
     }
-    Serial.print(" x: 100   ");         // prevents Arduino IDE serial monitor from auto-scaling
-    Serial.print("  max pin:");
+    Serial.print("  x:100  max pin:");         // prevents Arduino IDE serial monitor from auto-scaling
     Serial.println(maxSensorNumber);
   }
   delay(1);

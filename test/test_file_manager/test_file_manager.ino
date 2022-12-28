@@ -11,7 +11,7 @@ TactileFileManager *fm;
 
 void setup() {
   tc = TactileCPU::setup();
-  tc->setLogLevel(2);
+  tc->setLogLevel(1);
   fm = new TactileFileManager(tc);
 }
 
