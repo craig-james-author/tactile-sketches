@@ -63,6 +63,14 @@ void setup() {
 
   
   //----------------------------------------------------------------------
+  // LOOP MODE
+  //
+  // If true, then a track loops back to the beginning when the end is
+  // reached. Default (false) is that the track just stops at the end.
+
+  t->setLoopMode(true);
+
+  //----------------------------------------------------------------------
   // IGNORE SENSOR
   //
   // If a sensor is not connected, or it's connected but you want your
